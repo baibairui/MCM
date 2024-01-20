@@ -42,6 +42,9 @@ krual算法和prime算法<br>
 ### 3.最大流与最小费用最大流
 https://blog.csdn.net/bairui6666/article/details/135712604<br>
 
+### 4.旅行商问题
+还没学0-1规划，先等一等
+
 ## 蒙特卡洛方法
 
 ## 三门问题和圆周率的模拟求解
