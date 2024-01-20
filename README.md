@@ -39,6 +39,9 @@ https://blog.csdn.net/bairui6666/article/details/134585165<br>
 ### 2.最小生成树
 krual算法和prime算法<br>
 
+### 3.最大流与最小费用最大流
+https://blog.csdn.net/bairui6666/article/details/135712604<br>
+
 ## 蒙特卡洛方法
 
 ## 三门问题和圆周率的模拟求解
