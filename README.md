@@ -20,10 +20,13 @@ https://blog.csdn.net/bairui6666/article/details/135704956 <br>
 https://blog.csdn.net/bairui6666/article/details/135704909<br>
 
 
-## 回归模型
+## 回归与预测模型
 
 ### 1.线性回归
 还没总结<br>
+
+### 2.Arima模型
+时序序列的预测，通过差分将非平稳序列化为平稳序列。Kaggle房价预测成功率40%！
 
 ## 规划模型
 
