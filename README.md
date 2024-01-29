@@ -7,6 +7,11 @@
 - [Stronger Detector](https://contentatscale.ai/?fpr=home23&gclid=CjwKCAiAk9itBhASEiwA1my_69BJTeH6OwEUoFWRDcC15zgR6Z0Cn4mO6x6Ca8QhPl91aAr2sizvTxoCVPQQAvD_BwE)
 - [Alternative](https://originality.ai/blog/contentatscale-ai-content-detection-review)
 
+### USEFUL TOOLS
+
+- [Color map references](https://matplotlib.org/stable/gallery/color/colormap_reference.html)
+- [Time Series Histogram](https://matplotlib.org/stable/gallery/statistics/time_series_histogram.html)
+
 ## CHECKLIST :white_check_mark:
 
 &#x2610; Set colour palatte based on the given problem
