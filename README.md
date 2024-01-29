@@ -6,7 +6,8 @@
 - [Detection tool for GPT writing](https://gptzero.me/)
 - [Stronger Detector](https://contentatscale.ai/?fpr=home23&gclid=CjwKCAiAk9itBhASEiwA1my_69BJTeH6OwEUoFWRDcC15zgR6Z0Cn4mO6x6Ca8QhPl91aAr2sizvTxoCVPQQAvD_BwE)
 - [Alternative](https://originality.ai/blog/contentatscale-ai-content-detection-review)
-## CHECKLIST
+
+## CHECKLIST :white_check_list:
 
 &#x2610; Set colour palatte based on the given problem
 - Choose the best palatte fit for the concept/theme of the problem
