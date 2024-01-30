@@ -37,6 +37,8 @@
 
 ## Interpretting ACF and PACF Plots
 
+### [Kaggle Reference](https://www.kaggle.com/code/iamleonie/time-series-interpreting-acf-and-pacf/notebook#Fundamentals)
+
 Autocorrelation Function and Partial Autocorrelation Function plots modelled using ARMA (in our case, ARIMA) is crucial to **analyze patterns, seasonality and randomness.** Fundamentally, ACF and PACF plots are used to figure out the order of **AR (Auto-Regressive), MA (Moving Average) and ARMA models.** 
 
 - seasonality: predictable changes that occur over a one-year period in a business or economy based on calendar or commercial seasons
@@ -97,4 +99,21 @@ The PACF plot can provide answers to the following questions:
 **The difference between ACF and PACF is the inclusion or exclusion of indirect correlations in the calculation.**
 
 **Furthermore, you will see a blue area in the ACF and PACF plots, which depicts the 95% confidence interval and is in indicator for the significance threshold. That means, anything within the blue area is statistically close to zero and anything outside the blue area is statistically non-zero.**
+
+## Order of AR, MA and ARMA Model
+
+To determine model:
+
+| | AR(p) | MA(q) | ARMA |
+| - | - | - | - |
+| ACF | Tails off (Geometric Decay) | Significant at lag q / Cuts off after lag q | Tails off (Geometric decay) |
+| PACF | Significant at lag p / Cuts off after lag p | Tails off (Geometric decay) | Tails off (Geometric decay) |
+
+ARMA identification:
+
+| | ACF | PACF |
+| - | - | - |
+| AR(p) | Damped exponential and/or sine functions | $\phi_{kk} = 0$ for $k > p$ |
+| MA(q) | $\rho(k) = 0$ for $k < q$ | Dominated by damped exponential and/or sine functions |
+| ARMA(p, q) | Damped exponential and/or sine functions after lag $max(0, q-p)$ | ominated by damped exponential and/or sine functions after lag $max(0, p-q)$ |
 
