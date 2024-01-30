@@ -45,13 +45,13 @@ Autocorrelation Function and Partial Autocorrelation Function plots modelled usi
 
 ### AR Model 
 
-$\^{y_t} = \alpha_1y_{t-1}+...+\alpha_py_{t-p}$
+$\hat{y_t} = \alpha_1y_{t-1}+...+\alpha_py_{t-p}$
 
 This equation assumes that the current value ($y_t$) is **dependent on previous values** ($y_{t-p}$) to build a linear regression model. **PACF is used to figure out the order of AR.**
 
 ### MA Model
 
-$\^{y_t} = \beta_1y_{t-1}+...+\beta_py_{t-p}$
+$\hat{y_t} = \beta_1y_{t-1}+...+\beta_py_{t-p}$
 
 On the other hand, MA model assumes that the current value ($y_t$) is **dependent on the error terms** including current error ($\epsilon_t, ... , \epsilon _{t-q}$). Since the error terms are completely random, there is no linear relationship between current value and error terms. **ACF is used instead.**
 
@@ -59,7 +59,7 @@ On the other hand, MA model assumes that the current value ($y_t$) is **dependen
 | - | - |
 | PACF | ACF |
 | previous terms | error terms|
-| $\^{y_t} = \alpha_1y_{t-1}+...+\alpha_py_{t-p}$ | $\^{y_t} = \beta_1y_{t-1}+...+\beta_py_{t-p}$ |
+| $\hat{y_t} = \alpha_1y_{t-1}+...+\alpha_py_{t-p}$ | $\hat{y_t} = \beta_1y_{t-1}+...+\beta_py_{t-p}$ |
 
 ## Stationarity
 
