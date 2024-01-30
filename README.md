@@ -27,3 +27,74 @@
 - &#x2610; all notations
 - &#x2610; all related figures
 - &#x2610; PDF output
+
+## USEFUL TERMS
+
+- ACF: Autocorrelation Function
+- PACF: Partial Autocorrelation Function
+- Augmented Dickey-Fuller Test (ADF): Test Hypothesis
+- differencing
+
+## Interpretting ACF and PACF Plots
+
+Autocorrelation Function and Partial Autocorrelation Function plots modelled using ARMA (in our case, ARIMA) is crucial to **analyze patterns, seasonality and randomness.** Fundamentally, ACF and PACF plots are used to figure out the order of **AR (Auto-Regressive), MA (Moving Average) and ARMA models.** 
+
+- seasonality: predictable changes that occur over a one-year period in a business or economy based on calendar or commercial seasons
+
+### AR Model 
+
+$\^{y_t} = \alpha_1y_{t-1}+...+\alpha_py_{t-p}$
+
+This equation assumes that the current value ($y_t$) is **dependent on previous values** ($y_{t-p}$) to build a linear regression model. **PACF is used to figure out the order of AR.**
+
+### MA Model
+
+$\^{y_t} = \beta_1y_{t-1}+...+\beta_py_{t-p}$
+
+On the other hand, MA model assumes that the current value ($y_t$) is **dependent on the error terms** including current error ($\epsilon_t, ... , \epsilon _{t-q}$). Since the error terms are completely random, there is no linear relationship between current value and error terms. **ACF is used instead.**
+
+| AR | MA |
+| - | - |
+| PACF | ACF |
+| previous terms | error terms|
+| $\^{y_t} = \alpha_1y_{t-1}+...+\alpha_py_{t-p}$ | $\^{y_t} = \beta_1y_{t-1}+...+\beta_py_{t-p}$ |
+
+## Stationarity
+
+### ACF and PACF assume stationarity of the underlying time series. This can be checked by performing Augmented Dickey-Fuller Test (ADF): Test Hypothesis
+
+- p-value > 0.05: Fail to reject the null hypothesis (H0), the data has a unit root and is non-stationary.
+- p-value <= 0.05: Reject the null hypothesis (H0), the data does not have a unit root and is stationary.
+
+To achieve stationary time series, apply differencing. **Stationary ACF plots will drop to zero relatively quickly by observation while non-stationary plots decreases slowly.**
+
+- differencing: compute differences between consecutive observations
+
+## Definitions and Characteristics of ACF and PACF
+
+**ACF**
+
+Correlation between time series with a lagged version of itself. The correlation between the observation at the current time spot and the observations at previous time spots.The autocorrelation function starts a lag 0, which is the correlation of the time series with itself and therefore results in a correlation of 1.
+
+The ACF plot can provide answers to the following questions:
+
+- Is the observed time series white noise / random?
+- Is an observation related to an adjacent observation, an observation twice-removed, and so on?
+- Can the observed time series be modeled with an MA model? If yes, what is the order?
+
+**PACF**
+
+Additional correlation explained by each successive lagged term. The correlation between pbservations at two time spots given that we consider both observations are correlated to observations at other time spots:
+
+> The partial correlation at lag k is the autocorrelation between $X_t$ and $X_{t-k}$ that is not accounted for by lags 1 through $k-1$.
+
+The PACF plot can provide answers to the following questions:
+
+- Can the observed time series be modeled with an AR model? If yes, what is the order?
+
+**Both the ACF and PACF start with a lag of 0, which is the correlation of the time series with itself and therefore results in a correlation of 1.**
+
+**The difference between ACF and PACF is the inclusion or exclusion of indirect correlations in the calculation.**
+
+**Furthermore, you will see a blue area in the ACF and PACF plots, which depicts the 95% confidence interval and is in indicator for the significance threshold. That means, anything within the blue area is statistically close to zero and anything outside the blue area is statistically non-zero.**
+
