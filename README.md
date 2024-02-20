@@ -1,6 +1,7 @@
 # COMAP MCM/ICM Notes
 
 ## USEFUL WEBSITES :link:
+- [Image to Latex](https://mathpix.com/image-to-latex)
 - [Grammarly for final grammar checking](https://www.grammarly.com/)
 - [ChatGPT for poetic title Inspirations](https://chat.openai.com/)
 - [Detection tool for GPT writing](https://gptzero.me/)
